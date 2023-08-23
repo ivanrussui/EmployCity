@@ -1,0 +1,149 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background: $background-color;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  z-index: 22;
+
+  @media (max-width: 767px) {
+    min-height: 80px;
+  }
+}
+
+.navbar {
+  
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo__title {
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  &-child {
+    color: #42A9ED;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+    &-child {
+      font-size: 24px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+
+  @media (max-width: 767px) {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #10101D;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    top: 0;
+    left: 0;
+    padding: 50px 0;
+    transition: 6s all;
+  }
+
+  &__item-link {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+    &:hover {
+      color: $main-color;
+      text-decoration: none;
+      transition: .3s ease-in-out;
+    }
+  }
+}
+
+
+.burger {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+    position: relative;
+  width: 30px;
+  height: 20px;
+
+  &__line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+  }
+}
+
+//.active {
+//  color: $main-color;
+//}
+
+.menu_active {
+  display: flex;
+}
+
+#line1 {
+  top: 0;
+}
+
+#line2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#line3 {
+  bottom: 0;
+}
+
+.cross {
+  transform: rotate(45deg);
+}
+
+#line2.cross {
+  opacity: 0;
+}
+
+#line1.cross {
+  transform: translateY(8px) rotate(-45deg);
+}
+
+#line3.cross {
+  transform: translateY(-9px) rotate(45deg);
+}

@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../../fonts/Lato-Regular.woff2"), url("../../fonts/Lato-Regular.woff")
+}
+
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("../../fonts/Lato-SemiBold.woff2"), url("../../fonts/Lato-SemiBold.woff")
+}
+
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("../../fonts/Lato-Bold.woff2"), url("../../fonts/Lato-Bold.woff")
+}
+
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url("../../fonts/Lato-Heavy.woff2"), url("../../fonts/Lato-Heavy.woff")
+}
+
+
+@font-face {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url("../../fonts/Raleway-ExtraBold.ttf");
+}
+
+* {
+	font-family: 'Lato', sans-serif;
+}
